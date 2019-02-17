@@ -1,0 +1,10 @@
+{
+    "name": "simple-rest-service",
+    "description": "First exercise with Fastify",
+    "authors": "Andrea Dottor",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "fastify": "^1.14.1"
+    }
+}

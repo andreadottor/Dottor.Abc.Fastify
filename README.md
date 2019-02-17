@@ -1,2 +1,7 @@
 # Dottor.Abc.Fastify
-Sample, test,  exercise with fastify
+
+First steps with [Fastify](https://www.fastify.io).
+
+## Folders:
+
+**SimpleRestService**: a simple sample for check how write a basic API (for compare the sintax with express).
