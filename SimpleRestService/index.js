@@ -10,7 +10,7 @@
 const fastify = require('fastify')({ 
     logger: true, 
     ignoreTrailingSlash: true 
-})
+});
 
 
 /*
@@ -20,7 +20,7 @@ const fastify = require('fastify')({
     Fastify offers you a fast and smart way to create different version 
     of the same api without changing all the route names by hand, route prefixing.
 */
-fastify.register(require('./categories'), { prefix: '/api/categories' })
+fastify.register(require('./categories'), { prefix: '/api/categories' });
 
 /*
     Shorthand declaration
@@ -35,15 +35,15 @@ fastify.register(require('./categories'), { prefix: '/api/categories' })
 */
 fastify.get('/', async (request, reply) => {
   return { hello: 'world' }
-})
+});
 
 fastify.get('/api/products', async (request, reply) => {
     return ['prodotto1', 'prodotto2', 'prodotto3']
-  })
+});
 
 fastify.get('/api/products/:id', async (request, reply) => {
     return 'prodotto' + request.params['id'];
-  })
+});
 
 fastify.post('/api/products/', async (request, reply) => {
     /*
@@ -60,7 +60,7 @@ fastify.post('/api/products/', async (request, reply) => {
     console.log("name: " + name)
 
     reply.code(204).send();
-  })
+  });
 
 // Run the server!
 const start = async () => {
@@ -72,5 +72,5 @@ const start = async () => {
     process.exit(1)
   }
 }
-start()
+start();
 
