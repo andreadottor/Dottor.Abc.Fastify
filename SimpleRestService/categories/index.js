@@ -14,7 +14,7 @@ async function routes (fastify, options) {
         let id = request.params.id;
         
         for(let i=0;i<categories.length;i++){
-            vat cat = categories[i];
+            let cat = categories[i];
             if(cat.id == id)
                 return cat;
         }
