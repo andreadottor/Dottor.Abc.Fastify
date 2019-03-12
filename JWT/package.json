@@ -1,0 +1,12 @@
+{
+    "name": "test-jwt-fastify",
+    "description": "Prove con il package jwt",
+    "authors": "Andrea Dottor",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "bcrypt": "^3.0.4",
+        "fastify": "^2.0.1",
+        "fastify-jwt": "^0.9.3"
+    }
+}
