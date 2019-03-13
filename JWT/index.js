@@ -52,10 +52,7 @@ fastify.register(async function (fastify, opts) {
         }
     });
 
-    fastify.get('/', {
-            onRequest: [fastify.authenticate]
-        },
-        async (request, reply) => {
+    fastify.get('/', async (request, reply) => {
             let tokenJwt = request.user;
 
             return {
