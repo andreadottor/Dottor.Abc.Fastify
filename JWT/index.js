@@ -13,7 +13,7 @@ fastify.register(require('fastify-jwt'), {
     secret: 'supersecret'
 })
 
-fastify.post('/signup', (request, reply) => {
+fastify.post('/token', (request, reply) => {
     // some code
     let model = request.body;
 
