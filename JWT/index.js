@@ -25,7 +25,7 @@ fastify.post('/token', (request, reply) => {
             id: 1,
             username: model.username
         };
-        const token = fastify.jwt.sign({ payload: user });
+        const token = fastify.jwt.sign(user);
         reply.send({ token });
     } else {
         reply.status(401).send({
@@ -53,11 +53,11 @@ fastify.register(async function (fastify, opts) {
     });
 
     fastify.get('/', async (request, reply) => {
-            let tokenJwt = request.user;
+            let jwtPayload = request.user;
 
             return {
                 hello: 'world',
-                user: tokenJwt.payload
+                user: jwtPayload
             }
         });
 });
