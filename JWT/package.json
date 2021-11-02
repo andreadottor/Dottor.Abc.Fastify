@@ -6,7 +6,7 @@
     "main": "index.js",
     "dependencies": {
         "bcrypt": "^5.0.0",
-        "fastify": "^2.0.1",
+        "fastify": "^2.15.1",
         "fastify-jwt": "^0.9.3"
     }
 }
