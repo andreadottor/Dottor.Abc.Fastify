@@ -5,6 +5,6 @@
     "version": "1.0.0",
     "main": "index.js",
     "dependencies": {
-        "fastify": "^2.15.1"
+        "fastify": "^5.2.2"
     }
 }
